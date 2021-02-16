@@ -1,0 +1,17 @@
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+
+      &:not(:last-child) {
+        border-right: 2px groove #000;
+      }
+    }
+  }
+}

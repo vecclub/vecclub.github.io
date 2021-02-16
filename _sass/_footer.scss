@@ -1,8 +1,28 @@
 footer {
-  a {
-    font-size: 16px;
-    i {
-      font-size: 32px;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+
+      &:not(:last-child) {
+        border-right: 2px groove #000;
+      }
+
+      a {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 32px;
+          margin-right: 4px;
+        }
+      }
     }
   }
 }
