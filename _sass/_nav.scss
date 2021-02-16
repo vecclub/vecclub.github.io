@@ -1,16 +1,50 @@
 nav {
+  position: relative;
+  padding: 16px;
+  background-color: #105023;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+
+  .nav-logo {
+    width: 64px;
+    height: 64px;
+    background-image: url("/assets/images/vec_logo.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-position: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #fff;
+  }
+
   ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    margin-right: 16px;
+    margin-left: 84px;
+    height: 64px;
+    background-color: #308B40;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.25);
 
     li {
       flex-grow: 1;
       display: flex;
       justify-content: center;
+      align-items: center;
 
       &:not(:last-child) {
-        border-right: 2px groove #000;
+        border-right: 2px solid #105023;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
       }
     }
   }

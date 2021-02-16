@@ -1,0 +1,47 @@
+.team-member-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 16px;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+
+  &-header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    &-name {
+      font-weight: normal;
+      color: #105023;
+    }
+
+    &-role {
+      font-style: italic;
+      color: #308B40;
+      font-size: 12px;
+    }
+
+    &-profile {
+
+      img {
+        border-radius:: 50%;
+        width: 64px;
+      }
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #308B40;
+  }
+
+  &-bio {
+    padding: 16px;
+    color: #2a2a2a;
+  }
+}
