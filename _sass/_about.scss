@@ -1,6 +1,7 @@
 .team-member-group {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 16px;
   grid-gap: 16px;
 }
@@ -9,6 +10,13 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  width: 320px;
+  position: relative;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.25);
+  }
 
   &-header {
     padding: 16px;
@@ -30,19 +38,33 @@
 
       img {
         border-radius: 50%;
-        width: 64px;
+        width: 80px;
       }
     }
   }
 
   hr {
     border: none;
-    height: 1px;
+    //height: 1px;
     background-color: #308B40;
   }
 
   &-bio {
     padding: 16px;
     color: #2a2a2a;
+    display: none;
+    position: absolute;
+    left: 320px;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s;
+    opacity: 0;
+    background-color: #308B40;
+    color: #fff;
+
+    &.show {
+      display: block;
+      opacity: 1;
+    }
   }
 }

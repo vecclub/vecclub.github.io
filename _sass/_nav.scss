@@ -49,3 +49,19 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 32px);
+
+    ul {
+      flex-direction: column;
+      background: none;
+      box-shadow: none;
+    }
+  }
+}

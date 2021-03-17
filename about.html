@@ -14,239 +14,26 @@ title: "VEC | About Us"
 <div class="team">
   <h1>Meet the Team</h1>
   <div class="team-member-group">
-    <!-- Abhinav -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Abhinav</h2>
-          <p class="team-member-header-role">Vice President</p>
+    {% for person in site.people %}
+      <div class="team-member">
+        <div class="team-member-header">
+          <div class="team-member-header-info">
+            <h2 class="team-member-header-name">{{ person.name }}</h2>
+            <p class="team-member-header-role">{{ person.role }}</p>
+          </div>
+          <div class="team-member-header-profile">
+            <img src="{{ person.image_url }}">
+          </div>
         </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hi, I’m Abhinav and I’m a junior at Coppell High School. As the vice-president of the Volunteering and Education Club, I hope to create change by helping out the community. On top of volunteering, I love playing video games, watching Star Wars, and reading a good book. If you have any questions, just send me an email at axy0784@g.coppellisd.com.
-        </p>
-      </div>
-    </div>
-    <!-- Rudra -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Rudra</h2>
-          <p class="team-member-header-role">Secretary</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
+        <hr>
+        <div class="team-member-bio">
+          <p>
+            {{ person }}
+          </p>
         </div>
       </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello. My name is Rudra, and I am the secretary of the Volunteering and Education Club. I hope to make the world a better place and serve others through my actions in this club. I am passionate about the environment and I play the piano.
-        </p>
-      </div>
-    </div>
-    <!-- Avaneesh -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Avaneesh</h2>
-          <p class="team-member-header-role">President</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello. My name is Avaneesh Buddha, and I am the president of the volunteering and Education club. I created this club to make a difference by helping the community. During my free time, I do art, learn about life and play piano.
-        </p>
-      </div>
-    </div>
-    <!-- Aryan -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Aryan</h2>
-          <p class="team-member-header-role">Project Manager</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Aryan, and I am one of the project managers in VEC. I have done more than 500 hours of volunteering, which gave me experiences such as how to lead people, manage people and make people do their designated tasks. In my free time I edit videos through Adobe After Effects and DaVinci Resolve 15.
-        </p>
-      </div>
-    </div>
-    <!-- Kaushik -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Kaushik</h2>
-          <p class="team-member-header-role">Member</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Kaushik Balantrapu, and I am a 16 year-old 11th grader at Coppell High School. Learning is very important to me, and I make sure to do it in the form of computer science, programming, and other topics I am interested in. I have helped to foster this same drive for learning in those younger than me by volunteering at the Biodiversity Education Center and teaching children about certain aspects of the environment, why they are so important, and how to protect them. I have also volunteered for over 120 hours at the Perot Museum of Nature and Science and help to teach children and adults alike about the most fascinating aspects of science, engineering, and mathematics, as well as the joy of learning.        </p>
-      </div>
-    </div>
-    <!-- Sid -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Sid</h2>
-          <p class="team-member-header-role">Video Editor</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Siddharth Mylavarapu and I am a junior at Coppell High School. I joined VEC to help people who don’t have enough resources to achieve their goals. I also like to try my best academically and always follow the Cowboys GRIT. When I have time I usually like to plan ahead or play games with my friends.
-        </p>
-      </div>
-    </div>
-    <!-- Faheem -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Faheem</h2>
-          <p class="team-member-header-role">Member</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Faheem and I am incharge of the volunteering hours and managing everyones for this club.
-        </p>
-      </div>
-    </div>
-    <!-- Kamalesh -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Kamalesh</h2>
-          <p class="team-member-header-role">Video Editor</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Kamalesh and I am the youtube editor for the videos made in the club.
-        </p>
-      </div>
-    </div>
-    <!-- Yash -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Yash</h2>
-          <p class="team-member-header-role">Member</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is yash and I am a member of vec club.
-        </p>
-      </div>
-    </div>
-    <!-- Sanskar -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Sanskar</h2>
-          <p class="team-member-header-role">Social Media Manager</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Sanskar and I am the social media manager for the club. I hope to help more organizations by posting free ads and helping their message reach out to more and more people.
-        </p>
-      </div>
-    </div>
-    <!-- Rishi Bush -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Rishi</h2>
-          <p class="team-member-header-role">Member</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello my name is Rishi, and I am one of the members in the VEC organization.
-        </p>
-      </div>
-    </div>
-    <!-- Jaideep -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Jaideep</h2>
-          <p class="team-member-header-role">Member</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello my name is Jaideep and I am one of the members in the VEC organization.
-        </p>
-      </div>
-    </div>
-    <!-- Arnav -->
-    <div class="team-member">
-      <div class="team-member-header">
-        <div class="team-member-header-info">
-          <h2 class="team-member-header-name">Arnav</h2>
-          <p class="team-member-header-role">YouTube Manager</p>
-        </div>
-        <div class="team-member-header-profile">
-          <img src="/assets/images/avaneesh_profile.png">
-        </div>
-      </div>
-      <hr>
-      <div class="team-member-bio">
-        <p>
-          Hello, my name is Arnav. I manage the youtube account for the organization.
-        </p>
-      </div>
-    </div>
+    {% endfor %}
+  </div>
   </div>
 </div>
 

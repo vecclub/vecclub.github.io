@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  background-color: #308B4020;
+  font-family: "QuickSand", sans-serif;
+  background-color: #f5f5f5;
 }
 
 .page-content {
@@ -12,6 +17,11 @@ body {
 
 h1 {
   margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 // #308B40
